@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title> IFSP - Contatos </title>
+  <link rel="icon" type="image/png"
+    href="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/favicon.ico">
+</head>
+
+
+
+
+<body>
+  <header id="cabecalho">
+    <nav>
+      <object width="100%" height="280px" data="menu.html"></object>
+    </nav>
+  </header>
+
+
+  <h2>
+    Mande uma mensagem
+  </h2>
+  <form action="Contato" method="post">
+    Nome Completo: <input name="nome"><br>
+    E-mail: <input name="email" type="email"><br>
+    <label for="telefone">Telefone</label>
+    <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+    <br>Assunto<select name="evento">
+      <option value="" selected> --Selecione-- </option>
+      <option value="Rec"> Reclamação </option>
+      <option value="Sug"> Sugestão </option>
+    </select>
+    </br>Mensagem: <textarea></textarea>
+    <br>
+    <div class="div-contatos">
+      Opção de Resposta<br>
+      <input name="resposta" type="checkbox" value="repemail" /> E-mail
+      <input name="resposta" type="checkbox" value="repmes" /> Mensagem
+    </div>
+    <a href="contatos.html"><button>Enviar</button></a>
+
+  </form>
+  <footer id="my-footer">
+    <nav>
+      <object width="100%" height="100px" data="footer.html"></object>
+    </nav>
+  </footer>
+</body>
+
+</html>

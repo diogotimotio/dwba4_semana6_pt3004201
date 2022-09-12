@@ -1,0 +1,75 @@
+.margem {
+    background-color: rgb(8, 94, 8);
+    width: 98vw;
+    min-height: 200px;
+    align-items: left;
+    display: flex;
+}
+
+
+.menu-if {
+    background-color: black;
+    width: 98vw;
+    align-items: center;
+    display: flex;
+}
+
+.menu-if ul {
+    list-style: none;
+
+}
+
+.menu-if li {
+    display: inline;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+}
+
+.menu-if a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 6px;
+    background-color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.menu-if :hover {
+    background-color: #000000;
+    text-decoration: none;
+    color: white;
+}
+
+
+.menu-if li ul {
+    position: absolute;
+    top: 45px;
+    left: 25px;
+    background-color: rgb(0, 0, 0);
+    display: none;
+}
+
+.menu-if li:hover ul,
+.menu-if li.over ul {
+    display: block;
+}
+
+.menu-if li ul li {
+    border: 1px solid white;
+    display: block;
+    width: 120px;
+}
+
+.sejararo {
+    height: 420px;
+    width: 630px;
+}
+
+.icone {
+    height: 42px;
+    width: 42px;
+    align-items: center;
+}

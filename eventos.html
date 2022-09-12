@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title> Eventos - IFSP </title>
+  <link rel="icon" type="image/png"
+    href="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/favicon.ico">
+</head>
+
+<body>
+  <header id="cabecalho">
+    <nav>
+      <object width="100%" height="280px" data="menu.html"></object>
+    </nav>
+  </header>
+
+  <h2>
+    Inscreva-se
+  </h2>
+
+  <div class="div-evento">
+    <form>
+      Evento:
+      <select name="evento">
+        <option value="" selected> --Selecione-- </option>
+        <option value="VSA"> Voe sem asas </option>
+        <option value="FJ"> Festa Junina </option>
+        <option value="ST"> Semana da Tecnologia </option>
+      </select>
+    </form>
+  </div>
+  <br>
+  <div class="div-evento">
+    Informações de acesso <br>
+    <form action="Acesso" method="post">
+      Usuário: <input name="usuario"><br>
+      Senha: <input name="senha" type="password"><br>
+      Confirme a senha: <input name="confsenha" type="password"><br>
+    </form>
+  </div>
+  <br>
+  <div class="div-evento">
+    Informações Pessoais
+    <form action="Dados" method="post">
+      Nome Completo: <input name="nome"><br>
+      E-mail: <input name="email" type="email"><br>
+      <label for="telefone">Telefone</label>
+<input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+      <div class="div-evento">Sexo <br>
+        <input type="radio" value="masc" name="sexo" /> Masculino
+        <input type="radio" value="feminino" name="sexo" /> Feminino
+      </div>
+      <br> Data de Nascimento: <input name="nasc" type=date" />
+      <br> Cor favorita: <input name="cor" type="color" />
+      <br> Perfil no Github: <input name="git">
+    </form>
+
+
+
+  </div>
+  <a href="eventos.html"><button>Inscrever</button></a>
+  <a href="eventos.html"><button>Limpar</button></a>
+<footer id="my-footer">
+    <nav>
+      <object width="100%" height="100px" data="footer.html"></object>
+    </nav>
+  </footer>
+</body>
+
+</html>
